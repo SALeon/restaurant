@@ -4,19 +4,27 @@
   "description": "build restaurant web site with Grid layout CSS",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint '**/*.js'",
-    "lint-fix": "prettier-eslint '**/*.js' --write"
+    "lint": "eslint src -c .eslintrc.json --ext js,jsx",
+    "lint-fix": "prettier-eslint '**/*.js' --write",
+    "start": "webpack ./src/index.js "
   },
   "author": "Siarhei Leanavets",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-webpack": "^0.11.0",
+    "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "1.16.3",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^4.7.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
   },
   "dependencies": {}
 }
