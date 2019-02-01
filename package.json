@@ -4,8 +4,19 @@
   "description": "build restaurant web site with Grid layout CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint-fix": "prettier-eslint '**/*.js' --write"
   },
   "author": "Siarhei Leanavets",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "1.16.3",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "dependencies": {}
 }
